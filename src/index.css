@@ -11,3 +11,180 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+.btn {
+  cursor: pointer;
+  border-radius: 0px;
+  -webkit-box-shadow: none !important;
+  box-shadow: none !important;
+}
+
+.btn.btn-primary {
+  background: #ff5f5f;
+  border: 2px solid #ff5f5f;
+  color: #fff;
+}
+
+.btn.btn-primary:hover {
+  background: #fff;
+  border: 1px solid #ff5f5f;
+  color: #ff5f5f;
+}
+
+.nav-item .nav-link.active {
+  color: #fff;
+  background-color: #f85959;
+  border-color: #f85959;
+}
+
+.header-img {
+  padding-top: 50px;
+  width: 100%;
+  height:100%;
+  min-height:800px;
+  max-height:800px;
+  background-size: cover;
+  background-position: center;
+}
+
+@media (max-width: 767px) {
+  .header-img .fullscreen {
+    height: auto !important;
+  }
+}
+
+.banner-left h6 {
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 14px;
+  letter-spacing: 2px;
+}
+
+.banner-left h1 {
+  margin: 20px 0;
+  font-size: 60px;
+  text-transform: uppercase;
+}
+
+@media (max-width: 1199px) {
+  .banner-left h1 {
+    font-size: 40px;
+  }
+}
+
+@media (max-width: 413px) {
+  .banner-left h1 {
+    font-size: 33px;
+  }
+}
+
+@media (max-width: 991px) and (min-width: 768px) {
+  .banner-left h1 {
+    font-size: 36px;
+  }
+  .banner-left h6 {
+    font-size: 12px;
+  }
+}
+
+.banner-left p {
+  margin: 20px 0px;
+}
+
+.banner-left .primary-btn {
+  background: #f85959;
+  border: 1px solid #f85959;
+}
+
+.banner-left .primary-btn:hover {
+  background: #222;
+  color: #fff;
+}
+
+@media (max-width: 767px) {
+  .banner-left {
+    margin-top: 120px;
+    margin-bottom: 60px;
+  }
+}
+
+.banner-right .nav-tabs {
+  border-bottom: none;
+}
+
+.banner-right .nav-item {
+  background: rgba(255, 255, 255, 0.25);
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 13px;
+  margin-right: 1px;
+}
+
+.banner-right .nav-item a {
+  color: #fff;
+}
+
+.nav-link.active {
+  color: #fff;
+  background-color: #f85959;
+  border-color: #f85959;
+}
+
+.banner-right .nav-item:hover a {
+  border-color: transparent !important;
+}
+
+.banner-right .nav-tabs .nav-link {
+  border-radius: 0 !important;
+}
+
+.banner-right .tab-content {
+  background: #fff;
+}
+
+.banner-right .form-wrap {
+  padding: 40px 30px;
+  text-align: center;
+}
+
+.banner-right .form-wrap .form-control {
+  padding: 0.675rem 0.75rem;
+  font-size: 13px;
+  font-weight: 300;
+  border-radius: 0px;
+  margin-bottom: 10px;
+  border-color: #eee;
+}
+
+.banner-right .form-wrap .form-control:focus {
+  box-shadow: none;
+}
+
+@media (max-width: 1024px) {
+  .banner-right {
+    margin-top: 40px;
+  }
+}
+
+@media (max-width: 767px) {
+  .banner-right {
+    padding-bottom: 50px;
+  }
+}
+
+.cards {
+  background: #f8faff !important;
+}
+
+.card-row {
+  padding-top: 50px;
+}
+
+.card .card-block {
+margin: 15px;
+}
+
+.card:hover {
+  background-color: #f85959;
+  color: #fff;
+}
