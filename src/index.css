@@ -1,190 +1,273 @@
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+    margin: 0;
+    font-size: 14px;
+    font-family: -apple-system, BlinkMacSystemFont, "Poppins", Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
 
+.content {
+    background: #f8faff !important;
+}
+.form-control {
+    padding: 0.675rem 0.75rem;
+    font-size: 13px;
+    font-weight: 300;
+    border-radius: 0px;
+    margin-bottom: 10px;
+    border-color: #ff5f5f;
+}
+
+.form-control:focus {
+    box-shadow: 0 0 5px rgba(98, 101, 228, 1) !important;
+}
+
 .btn {
-  cursor: pointer;
-  border-radius: 0px;
-  -webkit-box-shadow: none !important;
-  box-shadow: none !important;
+    cursor: pointer;
+    border-radius: 0px;
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
 }
 
 .btn.btn-primary {
-  background: #ff5f5f;
-  border: 2px solid #ff5f5f;
-  color: #fff;
+    background: #ff5f5f;
+    border: 1px solid #ff5f5f;
+    color: #fff;
 }
 
 .btn.btn-primary:hover {
-  background: #fff;
-  border: 1px solid #ff5f5f;
-  color: #ff5f5f;
+    background: #fff;
+    border: 1px solid #ff5f5f;
+    color: #ff5f5f;
 }
 
 .nav-item .nav-link.active {
-  color: #fff;
-  background-color: #f85959;
-  border-color: #f85959;
+    color: #fff;
+    background-color: #f85959;
+    border-color: #f85959;
 }
 
 .header-img {
-  padding-top: 50px;
-  width: 100%;
-  height:100%;
-  min-height:800px;
-  max-height:800px;
-  background-size: cover;
-  background-position: center;
+    padding-top: 50px;
+    width: 100%;
+    height: 100%;
+    min-height: 800px;
+    max-height: 800px;
+    background-size: cover;
+    background-position: center;
 }
 
 @media (max-width: 767px) {
-  .header-img .fullscreen {
-    height: auto !important;
-  }
+    .header-img .fullscreen {
+        height: auto !important;
+    }
 }
 
 .banner-left h6 {
-  text-transform: uppercase;
-  font-weight: 400;
-  font-size: 14px;
-  letter-spacing: 2px;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 14px;
+    letter-spacing: 2px;
 }
 
 .banner-left h1 {
-  margin: 20px 0;
-  font-size: 60px;
-  text-transform: uppercase;
+    margin: 20px 0;
+    font-size: 60px;
+    text-transform: uppercase;
 }
 
 @media (max-width: 1199px) {
-  .banner-left h1 {
-    font-size: 40px;
-  }
+    .banner-left h1 {
+        font-size: 40px;
+    }
 }
 
 @media (max-width: 413px) {
-  .banner-left h1 {
-    font-size: 33px;
-  }
+    .banner-left h1 {
+        font-size: 33px;
+    }
 }
 
 @media (max-width: 991px) and (min-width: 768px) {
-  .banner-left h1 {
-    font-size: 36px;
-  }
-  .banner-left h6 {
-    font-size: 12px;
-  }
+    .banner-left h1 {
+        font-size: 36px;
+    }
+
+    .banner-left h6 {
+        font-size: 12px;
+    }
 }
 
 .banner-left p {
-  margin: 20px 0px;
+    margin: 20px 0px;
 }
 
 .banner-left .primary-btn {
-  background: #f85959;
-  border: 1px solid #f85959;
+    background: #f85959;
+    border: 1px solid #f85959;
 }
 
 .banner-left .primary-btn:hover {
-  background: #222;
-  color: #fff;
+    background: #222;
+    color: #fff;
 }
 
 @media (max-width: 767px) {
-  .banner-left {
-    margin-top: 120px;
-    margin-bottom: 60px;
-  }
+    .banner-left {
+        margin-top: 120px;
+        margin-bottom: 60px;
+    }
 }
 
 .banner-right .nav-tabs {
-  border-bottom: none;
+    border-bottom: none;
 }
 
 .banner-right .nav-item {
-  background: rgba(255, 255, 255, 0.25);
-  text-transform: uppercase;
-  font-weight: 600;
-  font-size: 13px;
-  margin-right: 1px;
+    background: rgba(255, 255, 255, 0.25);
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 13px;
+    margin-right: 1px;
 }
 
 .banner-right .nav-item a {
-  color: #fff;
+    color: #fff;
 }
 
 .nav-link.active {
-  color: #fff;
-  background-color: #f85959;
-  border-color: #f85959;
+    color: #fff;
+    background-color: #f85959;
+    border-color: #f85959;
 }
 
 .banner-right .nav-item:hover a {
-  border-color: transparent !important;
+    border-color: transparent !important;
 }
 
 .banner-right .nav-tabs .nav-link {
-  border-radius: 0 !important;
+    border-radius: 0 !important;
 }
 
 .banner-right .tab-content {
-  background: #fff;
+    background: #fff;
 }
 
 .banner-right .form-wrap {
-  padding: 40px 30px;
-  text-align: center;
-}
-
-.banner-right .form-wrap .form-control {
-  padding: 0.675rem 0.75rem;
-  font-size: 13px;
-  font-weight: 300;
-  border-radius: 0px;
-  margin-bottom: 10px;
-  border-color: #eee;
-}
-
-.banner-right .form-wrap .form-control:focus {
-  box-shadow: none;
+    padding: 40px 30px;
+    text-align: center;
 }
 
 @media (max-width: 1024px) {
-  .banner-right {
-    margin-top: 40px;
-  }
+    .banner-right {
+        margin-top: 40px;
+    }
 }
 
 @media (max-width: 767px) {
-  .banner-right {
-    padding-bottom: 50px;
-  }
+    .banner-right {
+        padding-bottom: 50px;
+    }
+}
+
+.form-wrap {
+    border: 1px solid #ff5f5f;
 }
 
 .cards {
-  background: #f8faff !important;
+    background: #f8faff !important;
 }
 
-.card-row {
-  padding-top: 50px;
+.header-img .card-row {
+    padding-top: 100px;
 }
 
 .card .card-block {
-margin: 15px;
+    margin: 25px;
+}
+
+.card {
+    background-color: #ffffff;
+    color: #000000;
+    border: 1px solid #ff5f5f;
+    min-height: 300px;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 .card:hover {
-  background-color: #f85959;
-  color: #fff;
+    background-color: #f85959;
+    color: #fff;
+    cursor: pointer;
+}
+
+.bg-light {
+    background: #f8faff !important;
+}
+
+.shift-section {
+    position: relative;
+    width: 100%;
+    display: block;
+}
+
+.services-section .container {
+    background: #ffffff !important;
+    margin-top: -120px;
+    position: relative;
+}
+
+.deals {
+    background: #f8faff !important;
+    margin-top: 220px;
+    min-height: 500px;
+}
+
+.deals .card {
+    background-color: #ffffff;
+    color: #000000;
+    border: none;
+    min-height: 300px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.deals .card:hover {
+    border: 1px solid #ff5f5f;
+}
+
+.footer {
+    font-size: 16px;
+    color: rgba(255, 255, 255, 0.7);
+    background: #ff5f5f;
+    padding: 8em 0 8em 0;
+    position: relative;
+    width: 100%;
+    display: block;
+}
+
+.footer .footer-widget .heading-2 {
+    color: #fff;
+    margin-bottom: 40px;
+    font-size: 22px;
+    font-weight: 400;
+}
+
+.footer .list-unstyled {
+    padding-left: 0;
+    list-style: none;
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+
+.py-2 {
+    color: rgba(255, 255, 255, 0.7);
+    padding-bottom: 0.5rem !important;
+    text-decoration: none;
+    background-color: transparent;
 }

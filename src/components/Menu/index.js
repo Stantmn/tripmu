@@ -14,7 +14,7 @@ class Menu extends Component {
 
                     <div className="collapse navbar-collapse" id="ftco-nav">
                         <ul className="navbar-nav ml-auto">
-                            <li className="nav-item active">
+                            <li className="nav-item">
                                 <a href="/" className="nav-link">Home</a>
                             </li>
                             <li className="nav-item">
