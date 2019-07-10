@@ -14,6 +14,7 @@ import {BrowserRouter as Router, Route} from 'react-router-dom'
 import reducer from './reducers';
 import Home from './components/Home';
 import Menu from "./components/Menu";
+import Footer from './components/Footer';
 // import About from "./components/About";
 
 const store = createStore(reducer, composeWithDevTools(applyMiddleware(thunk)));
@@ -21,11 +22,14 @@ const store = createStore(reducer, composeWithDevTools(applyMiddleware(thunk)));
 ReactDOM.render(
     <Provider store={store}>
         <Menu/>
+        <div className="content">
         <Router>
             <div>
                 <Route exact path="/" component={Home}/>
             </div>
         </Router>
+        </div>
+        <Footer/>
     </Provider>,
     document.getElementById('root')
 );
