@@ -19,16 +19,17 @@ class Home extends Component {
                                 <h6 className="text-white">It was never so easy to</h6>
                                 <h1 className="text-white">Find a trip</h1>
                                 <h5 className="text-white">
-                                    You just need to choose dates, set some filters and we will find and provide to you better results and
+                                    You just need to choose dates, set some filters and we will find and provide to you
+                                    better results and
                                     best deals for your next travel including flights, hotels, car rentals.
                                 </h5>
                                 <button href="/" className="btn btn-primary text-uppercase">Get Started</button>
                             </div>
                             <div className="col-lg-5 col-md-6 banner-right">
-                                <MainForm />
+                                <MainForm/>
                             </div>
 
-                        <Cards />
+                            <Cards/>
                         </div>
                     </div>
                 </div>
@@ -36,7 +37,7 @@ class Home extends Component {
                     <div className="container">
                     </div>
                 </section>
-                <Deals />
+                <Deals/>
             </React.Fragment>
         );
     }

@@ -1,4 +1,5 @@
 import React, {Component} from 'react'
+import { Link } from "react-router-dom"
 
 class Menu extends Component {
 
@@ -15,25 +16,31 @@ class Menu extends Component {
                     <div className="collapse navbar-collapse" id="ftco-nav">
                         <ul className="navbar-nav ml-auto">
                             <li className="nav-item">
-                                <a href="/" className="nav-link">Home</a>
+                                <Link to="/" className="nav-link">Home</Link>
                             </li>
                             <li className="nav-item">
-                                <a href="/" className="nav-link">About</a>
+                                <Link to="/about" className="nav-link">About</Link>
                             </li>
                             <li className="nav-item">
-                                <a href="/" className="nav-link">Tour</a>
+                                <Link to="/trip" className="nav-link">Find a Trip</Link>
                             </li>
                             <li className="nav-item">
-                                <a href="/" className="nav-link">Hotels</a>
+                                <Link to="/hotels" className="nav-link">Hotels</Link>
                             </li>
                             <li className="nav-item">
-                                <a href="/" className="nav-link">Blog</a>
+                                <Link to="/flights" className="nav-link">Flights</Link>
                             </li>
                             <li className="nav-item">
-                                <a href="/" className="nav-link">Contact</a>
+                                <Link to="/rentals" className="nav-link">Rentals</Link>
+                            </li>
+                            <li className="nav-item">
+                                <Link to="/blog" className="nav-link">Blog</Link>
+                            </li>
+                            <li className="nav-item">
+                                <Link to="/contact" className="nav-link">Contact</Link>
                             </li>
                             <li className="nav-item cta">
-                                <a href="/" className="nav-link"><span>Add listing</span></a>
+                                <Link to="/login" className="nav-link"><span>Login</span></Link>
                             </li>
                         </ul>
                     </div>
