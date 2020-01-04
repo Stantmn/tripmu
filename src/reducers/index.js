@@ -4,5 +4,5 @@ import mainFormReducer from "./mainForm";
 
 export default combineReducers({
   routing: routerReducer,
-  mainFormReducer
+  mainForm: mainFormReducer
 });

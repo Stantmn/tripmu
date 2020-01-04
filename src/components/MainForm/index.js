@@ -2,21 +2,22 @@ import React, { Component } from "react";
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
 import { connect } from "react-redux";
+import * as actions from '../../actions/mainForm'
 
 class MainForm extends Component {
-    constructor(props) {
+    constructor( props ) {
         super(props);
-        this.state = {
-            startDate: new Date(),
-            endDate: new Date()
-        };
+        console.log(this.props);
         this.startDateChange = this.startDateChange.bind(this);
+        this.endDateChange = this.endDateChange.bind(this);
     }
 
-    startDateChange(date) {
-        this.setState({
-            startDate: date
-        });
+    startDateChange( date ) {
+        this.props.onChangeStartDate(date)
+    }
+
+    endDateChange( date ) {
+        this.props.onChangeEndDate(date)
     }
 
     render() {
@@ -34,7 +35,7 @@ class MainForm extends Component {
                             aria-selected="true"
                         >
                             Trip
-            </a>
+                        </a>
                     </li>
                     <li className="nav-item">
                         <a
@@ -47,7 +48,7 @@ class MainForm extends Component {
                             aria-selected="false"
                         >
                             Hotel
-            </a>
+                        </a>
                     </li>
                     <li className="nav-item">
                         <a
@@ -60,7 +61,7 @@ class MainForm extends Component {
                             aria-selected="false"
                         >
                             Flight
-            </a>
+                        </a>
                     </li>
                     <li className="nav-item">
                         <a
@@ -73,7 +74,7 @@ class MainForm extends Component {
                             aria-selected="false"
                         >
                             Car
-            </a>
+                        </a>
                     </li>
                 </ul>
                 <div className="tab-content" id="myTabContent">
@@ -106,9 +107,9 @@ class MainForm extends Component {
                                     <DatePicker
                                         className="form-control input"
                                         type="text"
-                                        selected={this.state.startDate}
-                                        onChange={this.startDateChange}
-                                        minDate={new Date()}
+                                        selected={ this.props.mainForm.startDate }
+                                        onChange={ this.startDateChange }
+                                        minDate={ new Date() }
                                     />
                                 </div>
                                 <div className="col-lg-2">End:</div>
@@ -116,9 +117,9 @@ class MainForm extends Component {
                                     <DatePicker
                                         className="form-control"
                                         type="text"
-                                        selected={this.state.endDate}
-                                        onChange={this.endDateChange}
-                                        minDate={this.state.startDate}
+                                        selected={ this.props.mainForm.endDate }
+                                        onChange={ this.endDateChange }
+                                        minDate={ this.props.mainForm.startDate }
                                     />
                                 </div>
                             </div>
@@ -145,7 +146,7 @@ class MainForm extends Component {
                             <div className="row">
                                 <button href="#" className="btn btn-primary text-uppercase">
                                     Search Trip
-                </button>
+                                </button>
                             </div>
                         </form>
                     </div>
@@ -198,7 +199,7 @@ class MainForm extends Component {
                             />
                             <button href="#" className="btn btn-primary text-uppercase">
                                 Search Hotel
-              </button>
+                            </button>
                         </form>
                     </div>
                     <div
@@ -250,7 +251,7 @@ class MainForm extends Component {
                             />
                             <button href="#" className="btn btn-primary text-uppercase">
                                 Search Flight
-              </button>
+                            </button>
                         </form>
                     </div>
                     <div
@@ -302,7 +303,7 @@ class MainForm extends Component {
                             />
                             <button href="#" className="btn btn-primary text-uppercase">
                                 Search Car
-              </button>
+                            </button>
                         </form>
                     </div>
                 </div>
@@ -315,12 +316,11 @@ const mapStateToProps = state => {
     return state;
 };
 
-const mapDispatchprops = dispatch => {
+const mapDispatchToProps = dispatch => {
     return {
-        // onGetPictures: () => dispatch(getPictures()),
-        // onClickNext: (current) => dispatch({type: 'NEXT', current}),
-        // onClickPrev: (current) => dispatch({type: 'PREVIOUS', current}),
+        onChangeStartDate: (startDate) => dispatch(actions.changeStartDate(startDate)),
+        onChangeEndDate: (endDate) => dispatch(actions.changeEndDate(endDate))
     };
 };
 
-export default connect(mapStateToProps, mapDispatchprops)(MainForm);
+export default connect(mapStateToProps, mapDispatchToProps)(MainForm);
